@@ -1,4 +1,4 @@
-# DBA-120-project
+# DBA 120 Final Project
 
 ## ERD for the MusicLib Database
 
