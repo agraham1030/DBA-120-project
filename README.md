@@ -1,4 +1,8 @@
 # DBA-120-project
-Final project for DBA 120
+
+## ERD for the MusicLib Database
 
 ![ERD](album_db_erd.png)
+
+## How To Create the Database
+
