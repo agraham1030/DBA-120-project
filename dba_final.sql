@@ -30,7 +30,7 @@ CREATE TABLE song (
   artist_name VARCHAR(255),
   album_title VARCHAR(255),
   song_length TIME,
-  PRIMARY KEY (song_title),
+  PRIMARY KEY (song_title)
 );
 
 CREATE TABLE studio (
@@ -42,13 +42,11 @@ CREATE TABLE studio (
   PRIMARY KEY (studio_name)
 );
 
-ALTER TABLE album (
+ALTER TABLE album
   ADD FOREIGN KEY (studio_name) REFERENCES studio(studio_name),
   ADD FOREIGN KEY (label_name) REFERENCES label(label_name),
-  ADD FOREIGN KEY (artist_name) REFERENCES artist(artist_name)
-);
+  ADD FOREIGN KEY (artist_name) REFERENCES artist(artist_name);
 
-ALTER TABLE song (
+ALTER TABLE song
   ADD FOREIGN KEY (artist_name) REFERENCES artist(artist_name),
-  ADD FOREIGN KEY (album_title) REFERENCES album(album_title)
- );
+  ADD FOREIGN KEY (album_title) REFERENCES album(album_title);
