@@ -10,10 +10,7 @@ CREATE TABLE album (
   album_release_date DATE,
   album_genre VARCHAR(255),
   album_num_awards INT,
-  PRIMARY KEY (album_title),
-  FOREIGN KEY (studio_name) REFERENCES studio(studio_name),
-  FOREIGN KEY (label_name) REFERENCES label(label_name),
-  FOREIGN KEY (artist_name) REFERENCES artist(artist_name)
+  PRIMARY KEY (album_title)
 );
 
 CREATE TABLE artist (
@@ -34,8 +31,6 @@ CREATE TABLE song (
   album_title VARCHAR(255),
   song_length TIME,
   PRIMARY KEY (song_title),
-  FOREIGN KEY (artist_name) REFERENCES artist(artist_name),
-  FOREIGN KEY (album_title) REFERENCES album(album_title)
 );
 
 CREATE TABLE studio (
@@ -46,3 +41,14 @@ CREATE TABLE studio (
   studio_short_zip VARCHAR(255),
   PRIMARY KEY (studio_name)
 );
+
+ALTER TABLE album (
+  ADD FOREIGN KEY (studio_name) REFERENCES studio(studio_name),
+  ADD FOREIGN KEY (label_name) REFERENCES label(label_name),
+  ADD FOREIGN KEY (artist_name) REFERENCES artist(artist_name)
+);
+
+ALTER TABLE song (
+  ADD FOREIGN KEY (artist_name) REFERENCES artist(artist_name),
+  ADD FOREIGN KEY (album_title) REFERENCES album(album_title)
+ );
