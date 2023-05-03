@@ -9,7 +9,7 @@ CREATE TABLE album (
   artist_name VARCHAR(255),
   album_release_date DATE,
   album_genre VARCHAR(255),
-  album_num_awards INT,
+  album_num_awards INT(3),
   PRIMARY KEY (album_title)
 );
 
@@ -38,7 +38,7 @@ CREATE TABLE studio (
   studio_street_address VARCHAR(255),
   studio_city VARCHAR(255),
   studio_state VARCHAR(255),
-  studio_short_zip VARCHAR(255),
+  studio_short_zip INT(5),
   PRIMARY KEY (studio_name)
 );
 
