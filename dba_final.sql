@@ -1,5 +1,7 @@
 CREATE DATABASE MusicLib;
 
+USE MusicLib;
+
 CREATE TABLE album (
   album_title VARCHAR(255) NOT NULL,
   studio_name VARCHAR(255),
