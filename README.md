@@ -2,7 +2,7 @@
 
 ## ERD for the MusicLib Database
 
-![ERD](album_db_erd.png)
+![ERD](album_db_erd_final.png)
 
 ## How To Create the Database
 
