@@ -1,10 +1,14 @@
 # DBA 120 Final Project
 
+---
+
 ## ERD for the MusicLib Database
 
 ![ERD](album_db_erd_final.png)
 
 [View on LucidChart](https://lucid.app/lucidchart/ad5fc83a-20ae-400a-a6de-a5cf658aa669/edit?viewport_loc=-67%2C-49%2C2321%2C1241%2C0_0&invitationId=inv_73dad8e5-a9e8-464d-be7f-fe5b09b18ccc)
+
+---
 
 ## How To Create the Database
 
@@ -69,6 +73,8 @@ ALTER TABLE song
   ADD FOREIGN KEY (album_title) REFERENCES album(album_title);
 
 ```
+
+---
 
 ## How to inject data to the MusicLib database
 
