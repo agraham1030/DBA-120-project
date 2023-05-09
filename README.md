@@ -220,3 +220,7 @@ INSERT INTO song (song_title, album_title, song_length) VALUES ('Corvus albicoll
 
 
 ```
+---
+##Script Result
+![DB Launch](album_db_upload.png)
+
