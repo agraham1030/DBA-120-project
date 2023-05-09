@@ -220,7 +220,44 @@ INSERT INTO song (song_title, album_title, song_length) VALUES ('Corvus albicoll
 
 
 ```
+
 ---
-##Script Result
+
+## Script Result
 ![DB Launch](album_db_upload.png)
 
+---
+
+## CRUD Demo
+
+### Create
+
+Script:
+![Create SQL](create_sql.png)
+
+Result:
+![Create Result](create_result.png)
+
+### Read
+
+Script:
+![Read SQL](read_sql.png)
+
+Result:
+![Read Result](read_result.png)
+
+### Update
+
+Script:
+![Update SQL](update_sql.png)
+
+Result:
+![Update Result](update_result.png)
+
+### Delete
+
+Script:
+![Delete SQL](delete_sql.png)
+
+Result:
+![Delete Result](delete_result.png)
